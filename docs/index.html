@@ -1,0 +1,510 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            #upper-box{
+                display: flex;
+                flex-flow: row;
+            }
+            #lower-box {
+                display: flex;
+                flex-flow: row;
+            }
+            #mid-box {
+                display: flex;
+                flex-flow: row;
+            }
+            #upper-right-box {
+                background-color:#607D8B;
+                flex:1;
+                padding: 0.15px 16px;
+                min-height: 700px;
+                display: flex;
+                justify-content: center;
+                flex-flow: column;
+                align-items: center;
+            }
+            #upper-left-box {
+                background-color: black;
+                flex:1;
+                padding: 0.15px 16px;
+                min-height: 700px;
+            }
+            #mid-right-box {
+                background-color: #3f51b5;
+                flex:1;
+                padding: 0.15px 16px;
+                min-height: 800px;
+            }
+            #mid-left-box {
+                background-color: #f1f1f1;
+                flex:1;
+                min-height: 800px;
+                padding: 0.15px 16px;
+            }
+            #lower-right-box {
+                background-color: #009688;
+                flex:1;
+                padding: 0.15px 16px;
+                min-height: 700px;
+            }
+            #lower-left-box {
+                background-color: #616161;
+                flex:1;
+                padding: 0.15px 16px;
+                min-height: 700px;
+            }
+
+
+            /* ------------------------------- Upper Left Css */
+
+
+            #my-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 64px 0px;
+            }
+            #my-logo h1 {
+                font-size: 36px;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                margin: 10px 0px;
+            }
+
+            #navigation {
+                padding: 64px 0px;
+                
+            }   
+            div#navigation div#a-div a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 18px;
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+            } 
+            #a1:hover {
+                background-color: #607D8B; ;
+            }
+
+            #a2:hover {
+                background-color: rgb(20, 160, 153) ;
+            }
+            #a3:hover {
+                background-color: #616161;
+            }
+            #a4:hover {
+                background-color: #5a3017;
+            }
+
+            
+            /* ------------------------------- Upper Right Css */
+
+            
+            #all-upper-right-box-content {
+                flex: 1;
+                padding: 64px 0px;
+                display: flex;
+                justify-content: center;
+                flex-flow: column;
+                align-items: center;
+            }
+            #all-upper-right-box-content h1 {
+                flex:1;
+                font-size: 36px;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                margin: 10px 0px;
+                
+            }
+            #about-paras {
+                padding: 12px 24px;
+                flex:1;
+            }
+            #about-paras p {
+                color: white;
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+                margin: 15px auto;
+                
+            }
+
+
+            /* ------------------------------- Middle Left Css */
+
+            #my-work-and-projects {
+                background-color: #f1f1f1;
+                padding: 64px 0px;
+                width: 100%;
+                margin-bottom:0px;
+            }
+            #my-work-and-projects p {
+                display: block;
+                width: 220px;
+                font-size: 15px;
+                color: color;
+                font-family: Verdana, sans-serif;
+                margin: 10px 0px;
+                width: 100%;
+                text-align: center;
+            }
+            #my-work-and-projects h2{
+                display: block;
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
+                color: black;
+                margin: 10px 0px;
+                width: 100%;
+                text-align: center;
+            }
+            #upper-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row;
+            }
+            #middle-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row;
+            }
+            #lower-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row;
+            }
+            #upper-left-image {
+                flex: 1;
+            }
+            #upper-right-image {
+                flex: 1;
+            }
+            #middle-left-image {
+                flex: 1;
+            }
+            #middle-right-image {
+                flex: 1;
+            }
+            #lower-left-image {
+                flex: 1;
+            }
+            #lower-right-image {
+                flex: 1;
+            }
+
+            #mid-left-box p {
+                display: block;
+                width: 100%;
+                font-size: 15px;
+                color: color;
+                font-family: Verdana, sans-serif;
+                margin: 15px 0px;
+                width: 100%;
+                text-align: center;
+            }
+
+
+            /* ------------------------------- Middle Right Css */
+
+            #all-middle-right-box-content {
+                padding: 64px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+            
+            #all-middle-right-box-content h2{
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
+                margin: 10px 0px;
+                color: white;
+            }
+            #all-middle-right-box-content p {
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+                margin: 15px 0px;
+                color: white;
+            }
+            table {
+                font-family: Verdana, sans-serif;
+                font-size: 17px;
+            }
+
+
+            /* ------------------------------- lower left Css */
+
+            #swing-by {
+                background-color: #616161;
+                padding: 64px 0px;
+                width: 100%;
+                margin-bottom:0px;
+            }
+
+            #swing-by h1{
+                display: block;
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                margin: 10px 0px;
+                width: 100%;
+                text-align: center;
+            }
+            #details {
+                padding: 64px 0px;
+            }
+            #details p {
+                font-size: 17px;
+                margin: 15px 0px;
+                font-family: Verdana, sans-serif;
+                color: white;
+                text-align: center;
+            }
+
+            /* ------------------------------- lower right Css */
+
+            #contact-form {
+                padding: 64px 24px;
+            }
+            #contact-form h1 {
+                color: white;
+                font-size: 36px;
+                font-family: 'Raleway', sans-serif;
+                margin: 10px 0px; 
+            }
+            #contact-form  p {
+                font-size: 15px;
+                margin: 16px 0px;
+                font-family: Verdana, sans-serif;
+                color :#f1f1f1;
+            }
+            form {
+                padding: 32px 16px;
+                background-color: white;
+            }
+            #info {
+                margin: 16px 0px;
+            }
+            #info label {
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+            }
+            #input {
+                padding: 8px;
+            }
+
+            #input input {
+                font-family: Verdana, sans-serif;
+                width: 100%;
+                height: 30px;
+                border: none;
+                border-bottom: 2px solid rgb(230, 229, 229);
+            }
+            form button {
+                width: 90px;
+                height: 45px;
+                border: 1px solid #009688;
+                color: white;
+                font-size: 19px;
+                font-size: Verdana, sans-serif;
+                background-color: #009688;
+                margin-left:465px;
+
+            }
+            footer {
+                background-color:black;
+                display: flex;
+                align-items: flex-start;
+                
+                height: 100px;
+            }
+            footer a {
+                font-size: 17px;
+                font-family: Verdana, sans-serif;
+                margin-top: 40px;
+                color: white;
+            }
+            footer p {
+                margin-top: 40px;
+                font-size: 17px;
+                font-family: Verdana, sans-serif;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="max-width: 1350px;">
+            <!------------------------ Upper Box -------------------------->
+            <div id="upper-box">
+                <div id="upper-left-box">
+                        <div id="my-logo">
+                            <h1>My Logo</h1>
+                        </div>
+                        <div id="navigation">
+                            <div id="a-div">
+                                <a id="a1" href="#">Home</a>
+                                <a id="a2" href="#">My Work</a>
+                                <a id="a3" href="#">Resume</a>
+                                <a id="a4" href="#">Contact</a>
+                            </div>
+                        </div>                   
+                </div>
+                <div id="upper-right-box">
+                    <div id="all-upper-right-box-content">
+                            <h1>About Me</h1>
+                            <img src="avatar3.png" style=" flex:1; margin: 16px ;width:50%; border-radius: 50%;">
+                            <div id="about-paras">
+                                <p style="line-height: 22px;">Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                                <p style="line-height: 22px;">Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------- Middle Box ------------------------>
+
+            <div id="mid-box">
+                <div id="mid-left-box">
+                        <div id="my-work-and-projects">
+                            <h2>My Work</h2>
+                            <p>Some of my latest projects.</p>
+                        </div>
+                        <div id="upper-images">
+                            <div id="upper-left-image">
+                                <img src="coffee.jpg" style="width:100%">
+                            </div>
+                            <div id="upper-right-image">
+                                <img src="workbench.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <div id="middle-images">
+                            <div id="middle-left-image">
+                                <img src="workbench.jpg" style="width:100%">
+                            </div>
+                            <div id="middle-right-image">
+                                <img src="coffee.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <div id="lower-images">
+                            <div id="lower-left-image">
+                                <img src="sound.jpg" style="width:100%">
+                            </div>
+                            <div id="lower-right-image">
+                                <img src="workbench.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <p>Just call me awesome.</p>
+                </div>
+
+
+                <div id="mid-right-box">
+                    <div id="all-middle-right-box-content">
+                            <h2>Resume</h2>
+                            <p>A draft from my CV</p>
+                            <div style="padding: 0.15px 16px;">
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr style="color: white; ">
+                                            <th style="padding: 8px 0px 8px 0px;text-align:left">Year</th>
+                                            <th style="padding: 8px; text-align:left">Title</th>
+                                            <th style="padding: 8px; text-align:left">Where</th>
+                                        </tr>
+                                        <tr style="background-color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2012-2016</td>
+                                            <td style="padding: 8px">The rest is history..</td>
+                                            <td style="padding: 8px;">Lorem ipsum</td>
+                                          </tr>
+                                          <tr style="color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2009-2012</td>
+                                            <td style="padding: 8px;">Started my own company</td>
+                                            <td style="padding: 8px;">My Garage</td>
+                                          </tr>
+                                          <tr style="background-color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2008-2009</td>
+                                            <td style="padding: 8px;">Started working for Lorem</td>
+                                            <td style="padding: 8px;">London, UK</td>
+                                          </tr>
+                                          <tr style="color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2005-2008</td>
+                                            <td style="padding: 8px;">Degree in Bachelor of Design</td>
+                                            <td style="padding: 8px;">Harvard, USA</td>
+                                          </tr>
+                                          <tr style="background-color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2002-2005</td>
+                                            <td style="padding: 8px;">Degree in Bachelor of Business</td>
+                                            <td style="padding: 8px;">RMIT University, Melbourne, Australia</td>
+                                          </tr>
+                                          <tr style="color: white;">
+                                            <td style="padding: 8px 8px 8px 16px;">2002-2005</td>
+                                            <td style="padding: 8px;">Degree in Bachelor of Business</td>
+                                            <td style="padding: 8px;">RMIT University, Melbourne, Australia</td>
+                                          </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------------- Lower Box ------------------------->
+
+
+
+            <div id="lower-box">
+                <div id="lower-left-box">
+                    <div id="swing-by">
+                        <h1>Swing By</h1>
+                    </div>
+                    <div id="details">
+                        <p>..for a cup of coffee, or whatever.</p>
+                        <p>Chicago, US</p>
+                        <p>+00 1515151515</p>
+                        <p>test@test.com</p>
+                    </div>
+                </div>
+                <div id="lower-right-box">
+                    <div id="contact-form">
+                        <h1>Contact</h1>
+                        <p>GET IN TOUCH</p>
+                        <form>
+                            <div id="info">
+                                <label>Name</label>
+                                <div id="input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div id="info">
+                                <label>Email</label>
+                                <div id="input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div id="info">
+                                <label>Message</label>
+                                <div id="input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+            </footer>
+    </body>
+</html>
